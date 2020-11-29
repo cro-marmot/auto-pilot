@@ -13,17 +13,11 @@ Super simple, yet super helpful when you don't want to be goofing around with co
 
 ## Usage:
 
-Make _auto-pilot.sh_ executable:
+Make _auto-pilot.sh_ executable with `chmod +x auto-pilot.sh`.
 
-`chmod +x auto-pilot.sh`
+Run _auto-pilot.sh_: `./auto-pilot.sh /Users/carantesk/ephemeral-project-dir root_namespace /Users/carantesk/snippets/standalone.cs`.
 
-Execute _auto-pilot.sh_:
-
-`./auto-pilot.sh /Users/carantesk/ephemeral-project-dir root_namespace /Users/carantesk/snippets/standalone.cs`
-
-If you are on _macOS_ and you want to make me feel proud :purple_heart: , you can add _auto-pilot_ to your _bin_.
-
-`cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`
+If you are on _macOS_ and you want to make me feel proud :purple_heart: , you can add _auto-pilot_ to your _bin_: `cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`.
 
 |Param|Notes|
 |---|---|
@@ -31,11 +25,11 @@ If you are on _macOS_ and you want to make me feel proud :purple_heart: , you ca
 |f|If the proposed link (link_name) already exists, then unlink it so that the link may occur. (The -f option overrides any previous -i options.)|
 |n|If the link_name or link_dirname is a symbolic link, do not follow it.  This is most useful with the -f option, to replace a symlink which may point to a directory.|
 
+You're welcome! Taken from `man ln`.
+
 Now you can type `auto-pilot` instead of `./auto-pilot.sh`. :smiling_imp:
 
 Run `ls -la` to check that the _symlink_ was created correctly.
-
-You're welcome!
 
 ## Requirements:
 
@@ -49,4 +43,4 @@ You're welcome!
 ## Limitations:
 
 - There is currently no way to pass _params_ to main()... the walkaround is to have the Shell script write a *.json file with all the values that are needed by main() and then read them in main() as a config file.
-- I still need to test how this works with external dependencies that need to be restored via Nugget using *PM* (Package Manager).
+- I still need to test how this works with external dependencies that need to be restored via Nugget using *PM* (Package Manager). Since `dotnet run` implicitly has a `dotnet restore` there should be no problem as long as the dependencies are declared in some way...
