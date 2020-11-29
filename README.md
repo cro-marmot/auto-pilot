@@ -4,6 +4,11 @@ Execute C# code snippets (standalone *.cs files) from the terminal. No need to c
 
 Super simple, yet super helpful when you don't want to be goofing around with complex Shell scripting. Move all the hard parts to C# and then call your main() from the command line.
 
+## Params need:
+- *$1* is the directory that will hold the ephemeral dotnet console project that will be used as a wrapper.
+- *$2* is the name of the root namespace. This must match with the namespace provided in the .cs file that will be used as *Program.cs*.
+- *$3* is the *.cs file that will be used as Program cs.
+
 ## Requirements:
 
 *.NET SDKs installed:*
@@ -15,3 +20,4 @@ Super simple, yet super helpful when you don't want to be goofing around with co
 ## Limitations:
 
 - There is currently no way to pass _params_ to main()... the walkaround is to have the Shell script write a *.json file with all the values that are needed by main() and then read them in main() as a config file.
+- I still need to test how this works with external dependencies that need to be restored via Nugget using *PM* (Package Manager).
