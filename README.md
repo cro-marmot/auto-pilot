@@ -23,10 +23,11 @@ If you are on _macOS_ and you want to make me feel proud :purple_heart: , you ca
 
 `cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`
 
+|||
 |---|---|
-| -s |Create a symbolic link.|
-| -f |If the proposed link (link_name) already exists, then unlink it so that the link may occur. (The -f option overrides any previous -i options.)|
-| -n |If the link_name or link_dirname is a symbolic link, do not follow it.  This is most useful with the -f option, to replace a symlink which may point to a directory.|
+|s|Create a symbolic link.|
+|f|If the proposed link (link_name) already exists, then unlink it so that the link may occur. (The -f option overrides any previous -i options.)|
+|n|If the link_name or link_dirname is a symbolic link, do not follow it.  This is most useful with the -f option, to replace a symlink which may point to a directory.|
 
 Now you can type `auto-pilot` instead of `./auto-pilot.sh`. :smiling_imp:
 
