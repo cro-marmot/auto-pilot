@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dotnet_console_wrapper
+namespace root_namespace
 {
     class Program
     {
