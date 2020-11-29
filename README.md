@@ -29,9 +29,9 @@ If you are on _macOS_ and you want to make me feel proud, you can add _auto-pilo
 
 Now you can type `auto-pilot` instead of `./auto-pilot.sh`. :smiling_imp:
 
-You're welcome.
+Run `ls -la` to check that the _symlink_ was created correctly.
 
-Run ls -la to check that the symlink was created correctly.
+You're welcome!
 
 ## Requirements:
 
