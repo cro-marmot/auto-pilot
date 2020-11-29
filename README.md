@@ -19,7 +19,7 @@ Execute _auto-pilot.sh_:
 
 `./auto-pilot.sh /Users/carantesk/ephemeral-project-dir root_namespace /Users/carantesk/snippets/standalone.cs`
 
-If you are on _macOS_ and you want to make me feel proud, you can add _auto-pilot_ to your _bin_.
+If you are on _macOS_ and you want to make me feel proud :purple_heart: , you can add _auto-pilot_ to your _bin_.
 
 `cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`
 
