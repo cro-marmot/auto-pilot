@@ -13,6 +13,7 @@ Super simple, yet super helpful when you don't want to be goofing around with co
 
 *.NET SDKs installed:*
   - 5.0.100
+  
 *.NET runtimes installed:*
   - Microsoft.AspNetCore.App 5.0.0
   - Microsoft.NETCore.App 5.0.0
