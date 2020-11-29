@@ -11,11 +11,25 @@ Super simple, yet super helpful when you don't want to be goofing around with co
 
 ## Usage:
 
-To make the 
+Make _auto-pilot.sh_ executable:
 
 `chmod +x auto-pilot.sh`
 
+Execute _auto-pilot.sh_:
+
 `./auto-pilot.sh /Users/carantesk/ephemeral-project-dir root_namespace /Users/carantesk/snippets/standalone.cs`
+
+If you are on _macOS_ and you want to make me feel proud, you can add _auto-pilot_ to your _bin_.
+
+Run `cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`. Replace $user with whoami value.
+
+-s Create a symbolic link.
+-f If the proposed link (link_name) already exists, then unlink it so that the link may occur. (The -f option overrides any previous -i options.)
+-n If the link_name or link_dirname is a symbolic link, do not follow it.  This is most useful with the -f option, to replace a symlink which may point to a directory.
+
+You're welcome.
+
+Run ls -la to check that the symlink was created correctly.
 
 ## Requirements:
 
