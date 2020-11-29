@@ -23,7 +23,6 @@ If you are on _macOS_ and you want to make me feel proud :purple_heart: , you ca
 
 `cd /usr/local/bin` and then `ln -sfn /the/file/path/in/which/you/downloaded/auto-pilot.sh auto-pilot`
 
-|||
 |---|---|
 |s|Create a symbolic link.|
 |f|If the proposed link (link_name) already exists, then unlink it so that the link may occur. (The -f option overrides any previous -i options.)|
