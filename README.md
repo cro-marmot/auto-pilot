@@ -44,3 +44,4 @@ Run `ls -la` to check that the _symlink_ was created correctly.
 
 - There is currently no way to pass _params_ to main()... the walkaround is to have the Shell script write a *.json file with all the values that are needed by main() and then read them in main() as a config file.
 - I still need to test how this works with external dependencies that need to be restored via Nugget using *PM* (Package Manager). Since `dotnet run` implicitly has a `dotnet restore` there should be no problem as long as the dependencies are declared in some way...
+

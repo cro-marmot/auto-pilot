@@ -1,10 +1,10 @@
 #!/bin/bash
-# $1 is the directory that will hold the ephemeral dotnet console project that will be used as a wrapper.
-# $2 is the name of the root namespace. This must match with the namespace provided in the .cs file that will be used as Program.cs
-# $3 is the .cs file that will be used as Program cs.
 
-#chmod +x executor.sh
-#./executor.sh /Users/admin/ephemeral dotnet_console_wrapper /Users/admin/dotnet-console-wrapper/Program.cs
+#Check if the script to be executed actually exists.
+if [ ! -f $3 ]; then
+    echo "Error: '$3' not found!"
+    exit 1
+fi
 
 current_dir=$(pwd)
 
@@ -23,7 +23,15 @@ echo "  <OutputType>Exe</OutputType>" >> dotnet-console-wrapper.csproj
 echo "  <TargetFramework>net5.0</TargetFramework>" >> dotnet-console-wrapper.csproj
 echo "  <RootNamespace>$2</RootNamespace>" >> dotnet-console-wrapper.csproj
 echo " </PropertyGroup>" >> dotnet-console-wrapper.csproj
+
+#echo " <ItemGroup>" >> dotnet-console-wrapper.csproj
+#echo "  <PackageReference Include=\"Microsoft.Azure.DocumentDB.Core\" Version=\"1.0.0\" />" >> dotnet-console-wrapper.csproj
+#echo " </ItemGroup>" >> dotnet-console-wrapper.csproj
+
 echo "</Project>" >> dotnet-console-wrapper.csproj
+
+#dotnet add dotnet-console-wrapper.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
+
 dotnet run
 cd $current_dir
 rm -rf $1
