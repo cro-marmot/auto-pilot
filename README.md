@@ -9,7 +9,7 @@ Super simple, yet super helpful when you don't want to be goofing around with co
 - *$2* is the name of the root namespace. This must match with the namespace provided in the .cs file that will be used as *Program.cs*.
 - *$3* is the *.cs file that will be used as Program cs.
 
-> Please note that *$1* will be removed!
+> :x: Please note that *$1* will be removed!
 
 ## Usage:
 
