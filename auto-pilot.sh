@@ -11,10 +11,6 @@ default_root_namespace=autopilot
 default_csproj_file=autopilot.csproj
 current_dir=$(pwd)
 
-cd $ephimeral_dir
-pwd
-cd $current_dir
-
 echo "Ephimeral directory: '$default_ephimeral_dir'"
 echo "Root namespace: '$default_root_namespace'"
 echo "Program.cs file: '$1'"
@@ -48,7 +44,7 @@ done < $1
 if [ ${#package_references[@]} -gt 0 ]; then
     echo " <ItemGroup>" >> $default_csproj_file
     for (( i=0; i<${#package_references[@]}; i++ )); do 
-        echo "  <PackageReference Include=\"${package_references[$i]}\" Version=\"${versions[$i]}\"/>" >> $default_csproj_file
+        echo "  <PackageReference Include=\"${package_references[$i]}\" Version=\"${versions[$i]}\" />" >> $default_csproj_file
     done
     echo " </ItemGroup>" >> $default_csproj_file
 fi
@@ -57,4 +53,4 @@ echo "</Project>" >> $default_csproj_file
 
 dotnet run
 cd $current_dir
-rm -rf $ephimeral_dir
+#rm -rf $ephimeral_dir
