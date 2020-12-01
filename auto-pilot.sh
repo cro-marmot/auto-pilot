@@ -53,4 +53,4 @@ echo "</Project>" >> $default_csproj_file
 
 dotnet run
 cd $current_dir
-#rm -rf $ephimeral_dir
+rm -rf $ephimeral_dir
