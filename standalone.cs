@@ -1,8 +1,6 @@
 ﻿using System;
 
-//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
-//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
-//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
+//auto-pilot add Newtonsoft.Json 12.0.3
 //auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
 
 namespace autopilot
