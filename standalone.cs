@@ -1,6 +1,11 @@
 ﻿using System;
 
-namespace root_namespace
+//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
+//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
+//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
+//auto-pilot add Microsoft.Azure.DocumentDB.Core 1.0.0
+
+namespace autopilot
 {
     class Program
     {
